@@ -90,6 +90,7 @@ body {
 .footer {
   padding: 3rem;
   background-color: $primary-dark;
+  height: 138vh;
 
   &__title {
     font-size: 4.5rem;
@@ -117,9 +118,6 @@ body {
   &__info {
     margin: 0;
     padding: -0.5rem 0;
-  }
-
-  &__email {
   }
 
   &__logo {
