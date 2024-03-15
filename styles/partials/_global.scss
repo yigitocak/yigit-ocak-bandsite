@@ -42,19 +42,19 @@ body {
 }
 
 .nav {
-  height: 20%;
+  height: 17.5vh;
   background-color: $primary-dark;
   display: flex;
   flex-direction: column;
 
   &__title {
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: 300;
     text-decoration: none;
     color: $primary-light;
     text-align: center;
     margin: 0;
-    padding: 1.25rem;
+    padding: 2rem;
   }
 
   &__list {
@@ -69,21 +69,67 @@ body {
     flex: 1;
     text-align: center;
 
-    &-active {
-      border-bottom: 6px solid $primary-light;
-      padding-bottom: 1.27rem;
+    &--active {
+      border-bottom: 10px solid $primary-light;
+      padding-bottom: 1.15rem;
     }
   }
 
   &__a {
     text-decoration: none;
     color: $primary-medium;
-    font-size: 1.75rem;
+    font-size: 2.5rem;
 
-
-    &-active {
+    &--active {
       color: $primary-light;
       font-weight: 600;
     }
+  }
+}
+
+.footer {
+  padding: 3rem;
+  background-color: $primary-dark;
+
+  &__title {
+    font-size: 4.5rem;
+    margin: 2rem 0 1.5rem 0;
+    font-weight: 600;
+    color: $secondary-light;
+  }
+
+  &__image {
+    height: 7.7vh;
+    padding: 2rem 5rem 0 0;
+  }
+
+  &__content, &__info, &__email, &__copyright {
+    font-size: 2.45rem;
+    color: $primary-light;
+    line-height: 3.5rem;
+  }
+
+  &__content {
+    font-weight: 600;
+    padding: 1.35rem 0;
+  }
+
+  &__info {
+    margin: 0;
+    padding: -0.5rem 0;
+  }
+
+  &__email {
+  }
+
+  &__logo {
+    height: 100px;
+    width: 340px;
+    margin-top: 5rem;
+  }
+
+  &__copyright {
+    margin-top: 1.15rem;
+    font-size: 2.1rem;
   }
 }
