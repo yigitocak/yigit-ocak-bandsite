@@ -35,12 +35,31 @@
 
   &__title {
     font-size: 3rem;
-    margin-top: 15px;
+    margin: 0.5rem 0 1.5rem 0;
     font-weight: 600;
   }
 
   &__image {
+    height: 100%;
     width: 100%;
+    max-height: 20rem;
+  }
 
+  &__quote {
+    font-size: 1.80rem;
+    font-weight: 600;
+    line-height: 2.85rem;
+    margin: 1.25rem 0 0.5rem 0;
+  }
+
+  &__paragraph {
+    font-size: 1.7rem;
+    letter-spacing: 0.04rem;
+    line-height: 2.35rem;
+
+    &-title {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
   }
 }
