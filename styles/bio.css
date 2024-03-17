@@ -136,6 +136,17 @@ body {
     font-size: 1.2rem;
   }
 }
+.nav__a:hover {
+  color: #FFFFFF;
+  border-bottom: 7px solid #FFFFFF;
+  padding: 1.2rem 3rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__a:hover {
+    padding: 2.6rem 0;
+    border-bottom: 5px solid #FFFFFF;
+  }
+}
 .nav__a--active {
   color: #FFFFFF;
   font-weight: 600;
@@ -323,7 +334,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    font-size: 6.2rem;
+    font-size: 5.3rem;
     padding: 4rem;
   }
 }
