@@ -225,6 +225,12 @@ body {
     width: 30%;
   }
 }
+@media screen and (min-width: 1280px) {
+  .footer__item {
+    margin-right: 10rem;
+    width: 15vw;
+  }
+}
 .footer__content, .footer__info, .footer__email, .footer__copyright {
   font-size: 1.7rem;
   color: #FFFFFF;

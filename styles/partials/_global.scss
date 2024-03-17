@@ -227,6 +227,11 @@ body {
       max-width: 30vw;
       width: 30%;
     }
+
+    @include desktop {
+      margin-right: 10rem;
+      width: 15vw;
+    }
   }
 
   &__content, &__info, &__email, &__copyright {
