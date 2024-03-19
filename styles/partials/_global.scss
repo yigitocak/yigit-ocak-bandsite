@@ -112,6 +112,11 @@ body {
 
     @include tablet {
       padding-bottom: 0.5rem;
+      margin-right: 7.81vw;
+    }
+
+    @include desktop {
+      margin-right: 3.125vw;
     }
 
     &--active {
@@ -121,11 +126,6 @@ body {
       @include tablet {
         padding: 2.55rem 0;
         border-bottom: 5px solid $primary-light;
-        margin-right: 7.81vw;
-      }
-
-      @include desktop {
-        margin-right: 3.125vw;
       }
     }
   }
@@ -151,6 +151,10 @@ body {
       @include tablet {
         padding: 4.06vh 0;
         border-bottom: 5px solid $primary-light;
+      }
+
+      @include desktop {
+        padding-bottom: 4.25vh;
       }
     }
 
