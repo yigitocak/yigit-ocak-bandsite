@@ -152,7 +152,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .nav__a:hover {
-    padding-bottom: 4.25vh;
+    padding-bottom: 4.3vh;
   }
 }
 .nav__a--active {
