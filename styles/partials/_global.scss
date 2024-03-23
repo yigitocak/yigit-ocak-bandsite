@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   margin: 15.19vh 0 0 0;
   font-family: "primary-font", serif, sans-serif;
@@ -15,16 +17,12 @@ body {
   }
 
   @include desktop {
-    margin-top: 11.1vh;
+    margin-top: 11.25vh;
   }
 }
 
 .nav__item.nav__item--active{
   border-bottom: 7px solid $primary-light;
-
-  @include desktop {
-    border-width: 4px;
-  }
 }
 
 .nav {
@@ -55,25 +53,15 @@ body {
     }
 
     @include desktop {
-      padding: 2.5rem 0 0 6.5rem;
+      padding: 2.5rem 1.5rem 2rem 2.5rem;
     }
   }
 
   &__image {
-    width: 30vw;
-    height: 3vh;
+    height: 30px;
 
     @include tablet {
-      min-width: 16vw;
-      height: 3vh;
-      width: 100%;
       margin-top: 0.5rem;
-    }
-
-    @include desktop {
-      height: 2.5vh;
-      width: 16vw;
-      margin-top: 0;
     }
   }
 
@@ -97,20 +85,11 @@ body {
 
     @include tablet {
       padding-bottom: 0.5rem;
-<<<<<<< HEAD
       margin-right: 6.5vw;
-=======
-      margin-right: 7.81vw;
->>>>>>> 9cd563079e8856079b865f9340b7a121753a0811
     }
 
     @include desktop {
       margin-right: 3.125vw;
-<<<<<<< HEAD
-      margin-left: -1.5rem;
-      padding-bottom: 0.1rem;
-=======
->>>>>>> 9cd563079e8856079b865f9340b7a121753a0811
     }
 
     &--active {
@@ -118,14 +97,7 @@ body {
 
       @include tablet {
         padding: 2.55rem 0;
-<<<<<<< HEAD
-      }
-
-      @include desktop {
-        border-width: 3px;
-=======
         border-bottom: 5px solid $primary-light;
->>>>>>> 9cd563079e8856079b865f9340b7a121753a0811
       }
     }
   }
@@ -139,10 +111,6 @@ body {
       font-size: 1.5rem;
     }
 
-    @include desktop {
-      font-size: 1.2rem;
-    }
-
     &:hover {
       color: $primary-light;
       border-bottom: 7px solid $primary-light;
@@ -151,10 +119,6 @@ body {
       @include tablet {
         padding: 4.2724vh 0;
         border-bottom: 5px solid $primary-light;
-      }
-
-      @include desktop {
-        padding-bottom: 4.30vh;
       }
     }
 
@@ -205,13 +169,13 @@ body {
   }
 
   &__image {
-    height: 8vh;
-    padding: 3vh 9vw 0 0;
+    height: 60px;
+    padding: 1rem 4rem 0 0;
 
     @include tablet {
       padding: 0 4vw 0 0;
       margin-top: 1.5rem;
-      height: 3.8vh;
+      height: 35px;
     }
 
     @include desktop {
@@ -282,15 +246,14 @@ body {
   }
 
   &__logo {
-    width: 30vw;
+    height: 45px;
     margin-top: 5rem;
 
     @include tablet {
       position: absolute;
-      top: -1.8rem;
+      top: -2rem;
       right: 1rem;
-      width: 22vw;
-      height: 3.2vh;
+      height: 30px;
     }
 
     @include desktop {
