@@ -9,6 +9,34 @@ $secondary-light: #FAFAFA;
 
 $BandSite-Black: #323232;
 
+// Text Styles for Mobile
+$mobile-pageHeader: 1.5rem;
+$mobile-sectionHeader: 1.5rem;
+$mobile-subHeader: 0.875rem;
+$mobile-bodyCopy: 0.813rem;
+$mobile-footer: 0.813rem;
+
+// Line Styles for Mobile
+$mobile-pageHeader-height: 2rem;
+$mobile-sectionHeader-height: 2rem;
+$mobile-subHeader-height: 1.375rem;
+$mobile-bodyCopy-height: 1.125rem;
+$mobile-footer-height: 1.125rem;
+
+// Text Styles for Desktop & Tablet
+$desktop-pageHeader: 3.75rem;
+$desktop-sectionHeader: 2.25rem;
+$desktop-subHeader: 1.5rem;
+$desktop-bodyCopy: 0.875rem;
+$desktop-footer: 0.813rem;
+
+// Line Styles for Desktop & Tablet
+$desktop-pageHeader-height: 4.25rem;
+$desktop-sectionHeader-height: 2.75rem;
+$desktop-subHeader-height: 2rem;
+$desktop-bodyCopy-height: 1.375rem;
+$desktop-footer-height: 1.125rem;
+
 // Break Points
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1280px;
