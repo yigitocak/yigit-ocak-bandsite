@@ -74,10 +74,11 @@ body {
   }
 }
 .nav__image {
-  height: 30px;
+  height: 40px;
 }
 @media screen and (min-width: 768px) {
   .nav__image {
+    height: 30px;
     margin-top: 0.5rem;
   }
 }
@@ -233,7 +234,7 @@ body {
 }
 .footer__content, .footer__info, .footer__email, .footer__copyright {
   color: #FFFFFF;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
 }
 @media screen and (min-width: 768px) {
   .footer__content, .footer__info, .footer__email, .footer__copyright {
@@ -280,14 +281,14 @@ body {
   }
 }
 .footer__logo {
-  height: 45px;
+  height: 40px;
   margin-top: 5rem;
 }
 @media screen and (min-width: 768px) {
   .footer__logo {
     position: absolute;
     top: -2rem;
-    right: 1rem;
+    right: 1vw;
     height: 30px;
   }
 }
@@ -317,11 +318,16 @@ body {
 }
 
 body {
-  margin-top: 15.22vh;
+  margin-top: 16.2vh;
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin-top: 12vh;
+  }
 }
 
 .hero {
-  height: 60vh;
+  height: 58vh;
   background-image: url("../assets/images/hero-shows.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -332,7 +338,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    height: 76.2vh;
+    height: 83vh;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -355,11 +361,16 @@ body {
   z-index: 1;
   letter-spacing: 0.04rem;
   padding-left: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2.8rem;
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    font-size: 6rem;
-    padding: 4rem;
+    font-size: 2.45rem;
+    padding-left: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 6rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -371,10 +382,20 @@ body {
   color: white;
   position: relative;
   z-index: 1;
-  font-size: 3rem;
+  font-size: 3.1rem;
   font-weight: 600;
-  width: 65vw;
+  width: 75vw;
   padding-left: 2rem;
+  letter-spacing: 0.05rem;
+  margin-top: 0;
+}
+@media screen and (min-width: 768px) {
+  .hero__sub {
+    font-size: 6.3rem;
+    padding-left: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 2.1rem;
+  }
 }
 .hero__iframe {
   position: relative;
@@ -383,12 +404,33 @@ body {
   height: 250px;
   padding: 2rem;
 }
+@media screen and (min-width: 768px) {
+  .hero__iframe {
+    height: 300px;
+    width: 62%;
+    padding-left: 4rem;
+  }
+}
 
+.shows {
+  padding-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .shows {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+  }
+}
 .shows__title {
-  font-size: 3rem;
+  font-size: 3.07rem;
   padding-left: 2rem;
   font-weight: 600;
   margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .shows__title {
+    font-size: 3.6rem;
+  }
 }
 .shows__list {
   list-style: none;
@@ -398,11 +440,38 @@ body {
   padding: 3rem 2rem 2rem 2rem;
   border-bottom: #E1E1E1 2px solid;
 }
+@media screen and (min-width: 768px) {
+  .shows__item {
+    display: flex;
+    align-items: center;
+    padding-right: 3.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
 .shows__label {
   font-size: 1.25rem;
   letter-spacing: 0.05rem;
   color: #AFAFAF;
   font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .shows__label {
+    display: none;
+  }
+}
+.shows__label-tablet {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .shows__label-tablet {
+    display: inline-block;
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    color: #AFAFAF;
+    font-weight: 600;
+    margin: 1rem 17.25vw 0.5rem 1rem;
+  }
 }
 .shows__date {
   font-size: 1.6rem;
@@ -411,10 +480,35 @@ body {
   margin-bottom: 2rem;
   letter-spacing: 0.04rem;
 }
+@media screen and (min-width: 768px) {
+  .shows__date {
+    font-size: 1.35rem;
+    margin: 0;
+    width: 13rem;
+  }
+}
 .shows__venue, .shows__location {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .shows__venue, .shows__location {
+    font-size: 1.35rem;
+    margin-left: 5.5rem;
+    margin-right: auto;
+    width: 13rem;
+  }
+}
+.shows__location {
+  font-size: 1.75rem;
+}
+@media screen and (min-width: 768px) {
+  .shows__location {
+    font-size: 1.45rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .shows__button {
   width: 100%;
@@ -425,6 +519,14 @@ body {
   border-radius: 7px;
   font-size: 1.85rem;
   margin-top: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .shows__button {
+    width: 19.8vw;
+    margin: 0 0 0 auto;
+    font-size: 1.45rem;
+    height: 6.7vh;
+  }
 }
 
 /*# sourceMappingURL=shows.css.map */

@@ -36,6 +36,27 @@ const shows = document.querySelector(".shows")
 
 const showsList = document.createElement("ul")
 showsList.classList.add("shows__list")
+shows.appendChild(showsList)
+
+const showsLabelTablet = document.createElement("li")
+showsLabelTablet.classList.add("shows__label-tablet")
+showsList.appendChild(showsLabelTablet)
+
+let showsLabel = document.createElement("span")
+showsLabel.classList.add("shows__label-tablet")
+showsLabel.textContent = "DATE"
+showsLabelTablet.appendChild(showsLabel)
+
+showsLabel = document.createElement("span")
+showsLabel.classList.add("shows__label-tablet")
+showsLabel.textContent = "VENUE"
+showsLabelTablet.appendChild(showsLabel)
+
+showsLabel = document.createElement("span")
+showsLabel.classList.add("shows__label-tablet")
+showsLabel.textContent = "LOCATION"
+showsLabelTablet.appendChild(showsLabel)
+
 
 const renderTickets = () => {
     ticketArray.forEach((index) => {
@@ -77,8 +98,6 @@ const renderTickets = () => {
         showsButton.classList.add("shows__button")
         showsButton.textContent = "BUY TICKETS"
         showsItem.appendChild(showsButton)
-
-        shows.appendChild(showsList)
     })
 }
 

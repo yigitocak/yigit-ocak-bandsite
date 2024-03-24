@@ -58,9 +58,10 @@ body {
   }
 
   &__image {
-    height: 30px;
+    height: 40px;
 
     @include tablet {
+      height: 30px;
       margin-top: 0.5rem;
     }
   }
@@ -214,7 +215,7 @@ body {
 
   &__content, &__info, &__email, &__copyright {
     color: $primary-light;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
 
     @include tablet {
       font-size: 1.2rem;
@@ -259,13 +260,13 @@ body {
   }
 
   &__logo {
-    height: 45px;
+    height: 40px;
     margin-top: 5rem;
 
     @include tablet {
       position: absolute;
       top: -2rem;
-      right: 1rem;
+      right: 1vw;
       height: 30px;
     }
 

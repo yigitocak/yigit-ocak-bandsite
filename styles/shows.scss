@@ -3,11 +3,15 @@
 @use "./partials/mixins" as *;
 
 body{
-  margin-top: 15.22vh;
+  margin-top: 16.2vh;
+
+  @include tablet {
+    margin-top: 12vh;
+  }
 }
 
 .hero {
-  height: 60vh;
+  height: 58vh;
   background-image: url("../assets/images/hero-shows.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,7 +21,7 @@ body{
   position: relative;
 
   @include tablet {
-    height: 76.2vh;
+    height: 83vh;
   }
 
   @include desktop {
@@ -40,10 +44,15 @@ body{
     z-index: 1;
     letter-spacing: 0.04rem;
     padding-left: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 2.8rem;
 
     @include tablet {
-      font-size: 6rem;
-      padding: 4rem;
+      font-size: 2.45rem;
+      padding-left: 3.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      margin-top: 6rem;
     }
 
     @include desktop {
@@ -55,10 +64,19 @@ body{
     color: white;
     position: relative;
     z-index: 1;
-    font-size: 3rem;
+    font-size: 3.1rem;
     font-weight: 600;
-    width: 65vw;
+    width: 75vw;
     padding-left: 2rem;
+    letter-spacing: 0.05rem;
+    margin-top: 0;
+
+    @include tablet {
+      font-size: 6.3rem;
+      padding-left: 3.5rem;
+      font-weight: 600;
+      margin-bottom: 2.1rem;
+    }
   }
 
   &__iframe {
@@ -67,16 +85,32 @@ body{
     width: 100%;
     height: 250px;
     padding: 2rem;
+
+    @include tablet {
+      height: 300px;
+      width: 62%;
+      padding-left: 4rem;
+    }
   }
 }
 
 .shows {
+  padding-top: 2rem;
+
+  @include tablet {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+  }
 
   &__title {
-    font-size: 3rem;
+    font-size: 3.07rem;
     padding-left: 2rem;
     font-weight: 600;
     margin-bottom: 0;
+
+    @include tablet {
+      font-size: 3.6rem;
+    }
   }
 
   &__list {
@@ -87,6 +121,14 @@ body{
   &__item {
     padding: 3rem 2rem 2rem 2rem;
     border-bottom: #E1E1E1 2px solid;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+      padding-right: 3.5rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
   }
 
   &__label {
@@ -94,6 +136,23 @@ body{
     letter-spacing: 0.05rem;
     color: #AFAFAF;
     font-weight: 600;
+
+    @include tablet {
+      display: none;
+    }
+
+    &-tablet {
+      display: none;
+
+      @include tablet {
+        display: inline-block;
+        font-size: 1.25rem;
+        letter-spacing: 0.05rem;
+        color: #AFAFAF;
+        font-weight: 600;
+        margin: 1rem 17.25vw 0.5rem 1rem;
+      }
+    }
   }
 
   &__date {
@@ -102,12 +161,35 @@ body{
     margin-top: 1rem;
     margin-bottom: 2rem;
     letter-spacing: 0.04rem;
+
+    @include tablet {
+      font-size: 1.35rem;
+      margin: 0;
+      width: 13rem;
+    }
   }
 
   &__venue, &__location {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
+
+    @include tablet {
+      font-size: 1.35rem;
+      margin-left: 5.5rem;
+      margin-right: auto;
+      width: 13rem;
+    }
+  }
+
+  &__location {
+    font-size: 1.75rem;
+
+    @include tablet {
+      font-size: 1.45rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__button {
@@ -119,5 +201,12 @@ body{
     border-radius: 7px;
     font-size: 1.85rem;
     margin-top: 0.8rem;
+
+    @include tablet {
+      width: 19.8vw;
+      margin: 0 0 0 auto;
+      font-size: 1.45rem;
+      height: 6.7vh;
+    }
   }
 }

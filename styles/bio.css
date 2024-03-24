@@ -74,10 +74,11 @@ body {
   }
 }
 .nav__image {
-  height: 30px;
+  height: 40px;
 }
 @media screen and (min-width: 768px) {
   .nav__image {
+    height: 30px;
     margin-top: 0.5rem;
   }
 }
@@ -233,7 +234,7 @@ body {
 }
 .footer__content, .footer__info, .footer__email, .footer__copyright {
   color: #FFFFFF;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
 }
 @media screen and (min-width: 768px) {
   .footer__content, .footer__info, .footer__email, .footer__copyright {
@@ -280,14 +281,14 @@ body {
   }
 }
 .footer__logo {
-  height: 45px;
+  height: 40px;
   margin-top: 5rem;
 }
 @media screen and (min-width: 768px) {
   .footer__logo {
     position: absolute;
     top: -2rem;
-    right: 1rem;
+    right: 1vw;
     height: 30px;
   }
 }
