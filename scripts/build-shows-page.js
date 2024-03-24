@@ -39,7 +39,7 @@ showsList.classList.add("shows__list")
 shows.appendChild(showsList)
 
 const showsLabelTablet = document.createElement("li")
-showsLabelTablet.classList.add("shows__label-tablet")
+showsLabelTablet.classList.add("shows__label-item")
 showsList.appendChild(showsLabelTablet)
 
 let showsLabel = document.createElement("span")
@@ -54,6 +54,7 @@ showsLabelTablet.appendChild(showsLabel)
 
 showsLabel = document.createElement("span")
 showsLabel.classList.add("shows__label-tablet")
+showsLabel.classList.add("shows__label-tablet--location")
 showsLabel.textContent = "LOCATION"
 showsLabelTablet.appendChild(showsLabel)
 
