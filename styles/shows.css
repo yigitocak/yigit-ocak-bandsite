@@ -173,6 +173,11 @@ body {
     margin-left: 0;
   }
 }
+@media screen and (min-width: 1280px) {
+  .footer__title {
+    font-size: 3rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__links {
     display: flex;
@@ -182,7 +187,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .footer__links {
-    margin-left: 9.375vw;
+    margin-left: 7vw;
   }
 }
 .footer__image {
@@ -199,6 +204,7 @@ body {
 @media screen and (min-width: 1280px) {
   .footer__image {
     height: 3vh;
+    padding: 0 2.7vw 0 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -210,7 +216,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .footer__container {
-    margin-left: 10vw;
+    margin-left: 7vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -222,7 +228,7 @@ body {
   .footer__item {
     margin-right: 0;
     margin-left: 0;
-    width: 21vw;
+    width: 18.5vw;
   }
 }
 .footer__content, .footer__info, .footer__email, .footer__copyright {
@@ -246,6 +252,11 @@ body {
     line-height: 2.75rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .footer__content {
+    font-size: 1.2rem;
+  }
+}
 .footer__info {
   margin: 0;
   padding: 0;
@@ -253,6 +264,11 @@ body {
 @media screen and (min-width: 768px) {
   .footer__info {
     margin: 1.11vh 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__info {
+    font-size: 1.15rem;
   }
 }
 .footer__email {
@@ -277,7 +293,9 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .footer__logo {
-    width: 180px;
+    top: -2rem;
+    right: 5.5rem;
+    height: 25px;
   }
 }
 .footer__copyright {
@@ -293,8 +311,8 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .footer__copyright {
-    margin-left: 9.375vw;
-    font-size: 1.2rem;
+    margin-left: 7vw;
+    font-size: 1.15rem;
   }
 }
 

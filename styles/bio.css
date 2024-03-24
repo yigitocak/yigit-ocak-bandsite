@@ -173,6 +173,11 @@ body {
     margin-left: 0;
   }
 }
+@media screen and (min-width: 1280px) {
+  .footer__title {
+    font-size: 3rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__links {
     display: flex;
@@ -182,7 +187,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .footer__links {
-    margin-left: 9.375vw;
+    margin-left: 7vw;
   }
 }
 .footer__image {
@@ -199,6 +204,7 @@ body {
 @media screen and (min-width: 1280px) {
   .footer__image {
     height: 3vh;
+    padding: 0 2.7vw 0 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -210,7 +216,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .footer__container {
-    margin-left: 10vw;
+    margin-left: 7vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -222,7 +228,7 @@ body {
   .footer__item {
     margin-right: 0;
     margin-left: 0;
-    width: 21vw;
+    width: 18.5vw;
   }
 }
 .footer__content, .footer__info, .footer__email, .footer__copyright {
@@ -246,6 +252,11 @@ body {
     line-height: 2.75rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .footer__content {
+    font-size: 1.2rem;
+  }
+}
 .footer__info {
   margin: 0;
   padding: 0;
@@ -253,6 +264,11 @@ body {
 @media screen and (min-width: 768px) {
   .footer__info {
     margin: 1.11vh 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__info {
+    font-size: 1.15rem;
   }
 }
 .footer__email {
@@ -277,7 +293,9 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .footer__logo {
-    width: 180px;
+    top: -2rem;
+    right: 5.5rem;
+    height: 25px;
   }
 }
 .footer__copyright {
@@ -293,8 +311,8 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .footer__copyright {
-    margin-left: 9.375vw;
-    font-size: 1.2rem;
+    margin-left: 7vw;
+    font-size: 1.15rem;
   }
 }
 
@@ -476,6 +494,7 @@ body {
 @media screen and (min-width: 1280px) {
   .about__paragraph-title {
     font-size: 1.85rem;
+    margin-bottom: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -498,7 +517,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .gallery {
-    padding-left: 11rem;
+    padding: 4rem 6rem 3rem 6rem;
   }
 }
 .gallery__title {
@@ -516,7 +535,7 @@ body {
 @media screen and (min-width: 1280px) {
   .gallery__title {
     font-size: 3rem;
-    margin-bottom: 3.75vw;
+    padding: 0 0 3rem 4rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -527,11 +546,6 @@ body {
     flex-wrap: wrap;
     margin-left: -4.375vw;
     margin-right: -4.375vw;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .gallery__container {
-    margin-left: -8.75vw;
   }
 }
 .gallery__image {
@@ -546,9 +560,8 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .gallery__image {
-    min-width: 28vw;
-    margin-left: 1.5rem;
-    margin-top: 1.5rem;
+    width: calc(28% - 2rem);
+    margin: 1rem;
   }
 }
 
@@ -563,6 +576,11 @@ body {
     padding: 4rem 4rem 0 4rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .comment {
+    padding: 4rem 11rem 0 10%;
+  }
+}
 .comment__title {
   font-size: 3.5rem;
   font-weight: 600;
@@ -575,9 +593,19 @@ body {
     font-weight: 600;
   }
 }
+@media screen and (min-width: 1280px) {
+  .comment__title {
+    font-size: 3.05rem;
+  }
+}
 .comment__container {
   display: flex;
   width: 100%;
+}
+@media screen and (min-width: 1280px) {
+  .comment__container {
+    margin-left: 17.5%;
+  }
 }
 .comment__avatar {
   min-width: 85px;
@@ -597,6 +625,13 @@ body {
     margin-left: 5.7rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .comment__avatar {
+    min-width: 65px;
+    min-height: 65px;
+    margin-left: 6.7rem;
+  }
+}
 .comment__box {
   display: flex;
   flex-direction: column;
@@ -611,6 +646,11 @@ body {
     margin-right: 6rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .comment__box {
+    margin-right: 36.5rem;
+  }
+}
 .comment__label {
   padding: 1rem 0;
   color: #AFAFAF;
@@ -618,11 +658,17 @@ body {
   letter-spacing: 0.04rem;
   font-size: 1.3rem;
 }
+@media screen and (min-width: 1280px) {
+  .comment__label {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+}
 .comment__name, .comment__add {
   width: 100%;
   min-height: 36px;
   height: 8vh;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 1.5rem;
   background-color: #FAFAFA;
   border: 2px solid #E1E1E1;
@@ -636,6 +682,13 @@ body {
     min-height: 48px;
     padding: 30px;
     font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comment__name, .comment__add {
+    font-size: 1.1rem;
+    padding: 20px;
+    width: 36.5rem;
   }
 }
 .comment__name::placeholder, .comment__add::placeholder {
@@ -670,6 +723,14 @@ body {
     margin-bottom: 3rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .comment__button {
+    padding: 0 44px;
+    font-size: 1.3rem;
+    height: 5.5vh;
+    border-radius: 5px;
+  }
+}
 .comment__button:hover {
   background-color: #000000;
   cursor: pointer;
@@ -682,6 +743,12 @@ body {
   .comment__parent {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comment__parent {
+    padding-left: 21.5rem;
+    padding-right: 21.5rem;
   }
 }
 .comment__list {
@@ -711,6 +778,12 @@ body {
     font-size: 1.5rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .comment__name-user {
+    font-size: 1.2rem;
+    margin-left: 5.5rem;
+  }
+}
 .comment__time {
   position: absolute;
   top: 0;
@@ -722,6 +795,11 @@ body {
 @media screen and (min-width: 768px) {
   .comment__time {
     font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comment__time {
+    font-size: 1.07rem;
   }
 }
 .comment__user-avatar {
@@ -739,6 +817,12 @@ body {
     min-height: 85px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .comment__user-avatar {
+    min-width: 65px;
+    min-height: 65px;
+  }
+}
 .comment__paragraph {
   display: inline-block;
   font-size: 1.6rem;
@@ -753,12 +837,24 @@ body {
     margin-left: 7rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  .comment__paragraph {
+    margin-left: 5.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.07rem;
+  }
+}
 .comment__separator {
   display: block;
   width: 100%;
   background-color: #E1E1E1;
   height: 2px;
   margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 1280px) {
+  .comment__separator {
+    margin-bottom: 1.5rem;
+  }
 }
 .comment__div {
   position: absolute;
@@ -773,6 +869,12 @@ body {
     width: 75vw;
     bottom: 0;
     left: -6rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comment__div {
+    left: -5.4rem;
+    width: 39vw;
   }
 }
 
