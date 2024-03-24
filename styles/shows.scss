@@ -2,3 +2,122 @@
 @use "./partials/global" as *;
 @use "./partials/mixins" as *;
 
+body{
+  margin-top: 15.22vh;
+}
+
+.hero {
+  height: 60vh;
+  background-image: url("../assets/images/hero-shows.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @include tablet {
+    height: 76.2vh;
+  }
+
+  @include desktop {
+    height: 85vh;
+  }
+
+  &::before{
+    background: rgba($primary-dark, 0.5);
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    color: $primary-light;
+    font-size: 1.8rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.04rem;
+    padding-left: 2rem;
+
+    @include tablet {
+      font-size: 6rem;
+      padding: 4rem;
+    }
+
+    @include desktop {
+      padding-left: 11rem;
+    }
+  }
+
+  &__sub {
+    color: white;
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    font-weight: 600;
+    width: 65vw;
+    padding-left: 2rem;
+  }
+
+  &__iframe {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 250px;
+    padding: 2rem;
+  }
+}
+
+.shows {
+
+  &__title {
+    font-size: 3rem;
+    padding-left: 2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    padding: 3rem 2rem 2rem 2rem;
+    border-bottom: #E1E1E1 2px solid;
+  }
+
+  &__label {
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    color: #AFAFAF;
+    font-weight: 600;
+  }
+
+  &__date {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.04rem;
+  }
+
+  &__venue, &__location {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    width: 100%;
+    background-color: #323232;
+    color: white;
+    height: 8.5vh;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.85rem;
+    margin-top: 0.8rem;
+  }
+}
