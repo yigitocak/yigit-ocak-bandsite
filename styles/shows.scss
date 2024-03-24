@@ -118,10 +118,12 @@ body{
 
 .shows {
   padding-top: 2rem;
+  padding-bottom: 1rem;
 
   @include tablet {
     padding-left: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    margin-right: 2rem;
   }
 
   &__title {
@@ -142,12 +144,12 @@ body{
 
   &__item {
     padding: 3rem 2rem 2rem 2rem;
-    border-bottom: #E1E1E1 2px solid;
+    border-bottom: $secondary-medium 2px solid;
 
     @include tablet {
       display: flex;
       align-items: center;
-      padding-right: 3.5rem;
+      padding-right: 1.5rem;
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
     }
@@ -162,7 +164,7 @@ body{
   &__label {
     font-size: 1.25rem;
     letter-spacing: 0.05rem;
-    color: #AFAFAF;
+    color: $primary-medium;
     font-weight: 600;
 
     @include tablet {
@@ -176,7 +178,7 @@ body{
         display: inline-block;
         font-size: 1.25rem;
         letter-spacing: 0.05rem;
-        color: #AFAFAF;
+        color: $primary-medium;
         font-weight: 600;
         margin: 1rem 17.25vw 0.5rem 1rem;
       }
@@ -197,7 +199,7 @@ body{
         display: inline-block;
         font-size: 1.25rem;
         letter-spacing: 0.05rem;
-        color: #AFAFAF;
+        color: $secondary-light;
         font-weight: 600;
         margin: 1rem 17.25vw 0.5rem 1rem;
       }
@@ -262,7 +264,7 @@ body{
 
   &__button {
     width: 100%;
-    background-color: #323232;
+    background-color: $BandSite-Black;
     color: white;
     height: 8.5vh;
     border: none;

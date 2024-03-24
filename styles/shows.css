@@ -148,7 +148,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .nav__a:hover {
-    padding: 4.2724vh 0;
+    padding: 2.7rem 0;
     border-bottom: 5px solid #FFFFFF;
   }
 }
@@ -449,11 +449,13 @@ body {
 
 .shows {
   padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .shows {
     padding-left: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    margin-right: 2rem;
   }
 }
 .shows__title {
@@ -479,7 +481,7 @@ body {
   .shows__item {
     display: flex;
     align-items: center;
-    padding-right: 3.5rem;
+    padding-right: 1.5rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
@@ -531,7 +533,7 @@ body {
     display: inline-block;
     font-size: 1.25rem;
     letter-spacing: 0.05rem;
-    color: #AFAFAF;
+    color: #FAFAFA;
     font-weight: 600;
     margin: 1rem 17.25vw 0.5rem 1rem;
   }

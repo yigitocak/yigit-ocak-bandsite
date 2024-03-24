@@ -523,7 +523,7 @@
   &__separator {
     display: block;
     width: 100%;
-    background-color: #E1E1E1;
+    background-color: $secondary-medium;
     height: 2px;
     margin-bottom: 2.5rem;
 
@@ -534,7 +534,7 @@
 
   &__div {
     position: absolute;
-    background-color: #E1E1E1;
+    background-color: $secondary-medium;
     height: 2px;
     width: 92vw;
     bottom: 0;
