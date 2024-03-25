@@ -708,10 +708,16 @@ body {
   letter-spacing: 0.05rem;
   font-family: "primary-font", serif, sans-serif;
 }
+.comment__name--invalid {
+  border: 2px solid red;
+}
 .comment__add {
   height: 25vh;
   padding: 1.5rem;
   resize: none;
+}
+.comment__add--invalid {
+  border: 2px solid red;
 }
 .comment__button {
   background-color: #323232;

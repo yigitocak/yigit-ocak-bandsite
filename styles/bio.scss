@@ -373,10 +373,20 @@
     font-family: "primary-font", serif, sans-serif;
   }
 
+  &__name {
+    &--invalid {
+      border: 2px solid red;
+    }
+  }
+
   &__add {
     height: 25vh;
     padding: 1.5rem;
     resize: none;
+
+    &--invalid {
+      border: 2px solid red;
+    }
   }
 
   &__button {
