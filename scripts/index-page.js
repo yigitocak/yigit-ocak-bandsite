@@ -24,7 +24,39 @@ const timestampDate = ` ${time.toLocaleDateString()}`
 
 const form = document.querySelector(".comment__form")
 const formParent = document.querySelector(".comment__parent")
+const inputBox = document.querySelector(".comment__name")
+const commentArea = document.querySelector(".comment__add")
 
+function submitForm(e) {
+    e.preventDefault();
+
+    const inputBoxValue = inputBox.value;
+    const commentBoxValue = commentArea.value;
+    let isValid = true
+
+    inputBox.classList.remove("comment__name--invalid")
+    commentArea.classList.remove("comment__add--invalid")
+
+    if (inputBoxValue === "" && commentBoxValue === "") {
+        inputBox.classList.add("comment__name--invalid")
+        commentArea.classList.add("comment__add--invalid")
+        isValid = false
+    }
+    else if (inputBoxValue === "") {
+        inputBox.classList.add("comment__name--invalid")
+        isValid = false
+    }
+    else if (commentBoxValue === "") {
+        commentArea.classList.add("comment__add--invalid")
+        isValid = false
+    }
+    else {
+        inputBox.classList.remove("comment__name--invalid")
+        commentArea.classList.remove("comment__add--invalid")
+    }
+
+    return isValid
+}
 
 const commentList = document.createElement("ul")
 commentList.classList.add("comment__list")
@@ -70,8 +102,15 @@ renderComments()
 form.addEventListener("submit", (event) => {
     event.preventDefault()
 
-    commentArray.unshift({name:event.target.fullName.value, comment:event.target.addedComment.value, time:timestampDate})
+    if(submitForm(event) === true) {
+        commentArray.unshift({name:event.target.fullName.value, comment:event.target.addedComment.value, time:timestampDate})
+        renderComments()
+    }
+    else {
+        event.target.reset()
+    }
 
-    renderComments()
     event.target.reset()
 })
+
+
