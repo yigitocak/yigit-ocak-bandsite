@@ -582,6 +582,25 @@ body {
   flex-direction: column;
   padding: 2rem 2rem 0 2rem;
   width: 100%;
+  /*&__div {
+    position: absolute;
+    background-color: $secondary-medium;
+    height: 2px;
+    width: 92vw;
+    bottom: 0;
+    left: -8rem;
+
+    @include tablet {
+      width: 75vw;
+      bottom: 0;
+      left: -6rem;
+    }
+
+    @include desktop {
+      left: -5.4rem;
+      width: 39vw;
+    }
+  }*/
 }
 @media screen and (min-width: 768px) {
   .comment {
@@ -872,27 +891,6 @@ body {
 @media screen and (min-width: 1280px) {
   .comment__separator {
     margin-bottom: 1.5rem;
-  }
-}
-.comment__div {
-  position: absolute;
-  background-color: #E1E1E1;
-  height: 2px;
-  width: 92vw;
-  bottom: 0;
-  left: -8rem;
-}
-@media screen and (min-width: 768px) {
-  .comment__div {
-    width: 75vw;
-    bottom: 0;
-    left: -6rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .comment__div {
-    left: -5.4rem;
-    width: 39vw;
   }
 }
 
