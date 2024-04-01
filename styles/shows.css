@@ -128,7 +128,7 @@ body {
 }
 .nav__a {
   text-decoration: none;
-  color: #AFAFAF;
+  color: #E1E1E1;
   font-size: 1.7rem;
 }
 @media screen and (min-width: 768px) {
@@ -484,6 +484,12 @@ body {
   padding: 3rem 2rem 2rem 2rem;
   border-bottom: #E1E1E1 2px solid;
 }
+.shows__item:hover {
+  background: #FAFAFA;
+}
+.shows__item:focus {
+  background: #E1E1E1;
+}
 @media screen and (min-width: 768px) {
   .shows__item {
     display: flex;
@@ -581,6 +587,7 @@ body {
     margin-left: 5.5rem;
     margin-right: auto;
     width: 13rem;
+    margin-bottom: 1rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -614,6 +621,9 @@ body {
   border-radius: 7px;
   font-size: 1.85rem;
   margin-top: 0.8rem;
+}
+.shows__button:hover {
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .shows__button {

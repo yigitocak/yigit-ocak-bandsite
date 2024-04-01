@@ -7,12 +7,10 @@ const formParent = document.querySelector(".comment__parent")
 const inputBox = document.querySelector(".comment__name")
 const commentArea = document.querySelector(".comment__add")
 
-function submitForm(e) {
-    e.preventDefault();
-
+function submitForm(isValid) {
     const inputBoxValue = inputBox.value;
     const commentBoxValue = commentArea.value;
-    let isValid = true
+    isValid = true
 
     inputBox.classList.remove("comment__name--invalid")
     commentArea.classList.remove("comment__add--invalid")
@@ -42,43 +40,47 @@ const commentList = document.createElement("ul")
 commentList.classList.add("comment__list")
 
 const renderComments = async () => {
-    commentList.replaceChildren()
+    commentList.replaceChildren(); // Clear existing comments
+
+    const separator = document.createElement("span");
+    separator.classList.add("comment__separator");
+    commentList.appendChild(separator);
 
     const commentArray = await bandSiteApiInstance.getComments();
 
     commentArray.forEach(item => {
+        let commentItem = document.createElement("li");
+        commentItem.classList.add("comment__item");
+        commentList.appendChild(commentItem);
 
-        let commentItem = document.createElement("li")
-        commentItem.classList.add("comment__item")
-        commentList.appendChild(commentItem)
+        let commentUser = document.createElement("span");
+        commentUser.classList.add("comment__user-avatar");
+        commentItem.appendChild(commentUser);
 
-        let commentUser = document.createElement("span")
-        commentUser.classList.add("comment__user-avatar")
-        commentItem.appendChild(commentUser)
+        let commentSpan = document.createElement("span");
+        commentSpan.classList.add("comment__name-user");
+        commentSpan.textContent = item.name;
+        commentItem.appendChild(commentSpan);
 
-        let commentSpan = document.createElement("span")
-        commentSpan.classList.add("comment__name-user")
-        commentSpan.textContent = item.name
-        commentItem.appendChild(commentSpan)
-
-        let commentTime = document.createElement("span")
+        let commentTime = document.createElement("span");
         let commentDate = new Date(item.timestamp);
-        commentTime.classList.add("comment__time")
-        commentTime.textContent = commentDate.toLocaleDateString()
-        commentItem.appendChild(commentTime)
+        commentTime.classList.add("comment__time");
+        commentTime.textContent = commentDate.toLocaleDateString();
+        commentItem.appendChild(commentTime);
 
-        let commentParagraph = document.createElement("p")
-        commentParagraph.classList.add("comment__paragraph")
-        commentParagraph.textContent = item.comment
-        commentItem.appendChild(commentParagraph)
+        let commentParagraph = document.createElement("p");
+        commentParagraph.classList.add("comment__paragraph");
+        commentParagraph.textContent = item.comment;
+        commentItem.appendChild(commentParagraph);
 
-        let separator = document.createElement("span")
-        separator.classList.add("comment__separator")
-        commentItem.appendChild(separator)
+        let separator = document.createElement("span");
+        separator.classList.add("comment__separator");
+        commentItem.appendChild(separator);
+    });
 
-        formParent.appendChild(commentList)
-    })
+    formParent.appendChild(commentList)
 }
+
 
 form.addEventListener("submit", (event) => {
     event.preventDefault()

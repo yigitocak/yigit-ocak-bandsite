@@ -152,6 +152,14 @@ body{
     padding: 3rem 2rem 2rem 2rem;
     border-bottom: $secondary-medium 2px solid;
 
+    &:hover{
+      background: #FAFAFA;
+    }
+
+    &:focus{
+      background: #E1E1E1;
+    }
+
     @include tablet {
       display: flex;
       align-items: center;
@@ -245,6 +253,7 @@ body{
       margin-left: 5.5rem;
       margin-right: auto;
       width: 13rem;
+      margin-bottom: 1rem;
     }
 
     @include desktop {
@@ -277,6 +286,10 @@ body{
     border-radius: 7px;
     font-size: 1.85rem;
     margin-top: 0.8rem;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     @include tablet {
       width: 19.8vw;
