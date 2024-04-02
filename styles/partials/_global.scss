@@ -6,8 +6,6 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   margin: 15.19vh 0 0 0;
   font-family: "primary-font", serif, sans-serif;
@@ -111,7 +109,7 @@ body {
 
   &__a {
     text-decoration: none;
-    color: $primary-medium;
+    color: $secondary-medium;
     font-size: 1.7rem;
 
     @include tablet {

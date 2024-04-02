@@ -51,6 +51,7 @@
 
 .about {
   padding: 2rem;
+  color: $BandSite-Black;
 
   @include tablet {
     padding: 3rem;
@@ -64,7 +65,6 @@
   &__title {
     font-size: 3.7rem;
     line-height: $mobile-pageHeader-height;
-    color: $BandSite-Black;
     margin: 2rem 0 3rem 0;
     font-weight: 600;
 
@@ -144,7 +144,6 @@
     font-size: 2rem;
     line-height: 2.5rem;
     letter-spacing: 0.035rem;
-    color: $primary-dark;
     margin-top: 0;
 
     @include tablet {
@@ -163,7 +162,6 @@
       margin-bottom: 1.8rem;
       font-weight: 600;
       letter-spacing: 0.05rem;
-      color: $secondary-dark;
 
       @include tablet {
         font-size: 2.5rem;
@@ -539,26 +537,6 @@
 
     @include desktop {
       margin-bottom: 1.5rem;
-    }
-  }
-
-  &__div {
-    position: absolute;
-    background-color: $secondary-medium;
-    height: 2px;
-    width: 92vw;
-    bottom: 0;
-    left: -8rem;
-
-    @include tablet {
-      width: 75vw;
-      bottom: 0;
-      left: -6rem;
-    }
-
-    @include desktop {
-      left: -5.4rem;
-      width: 39vw;
     }
   }
 }

@@ -128,7 +128,7 @@ body {
 }
 .nav__a {
   text-decoration: none;
-  color: #AFAFAF;
+  color: #E1E1E1;
   font-size: 1.7rem;
 }
 @media screen and (min-width: 768px) {
@@ -378,6 +378,7 @@ body {
 
 .about {
   padding: 2rem;
+  color: #323232;
 }
 @media screen and (min-width: 768px) {
   .about {
@@ -393,7 +394,6 @@ body {
 .about__title {
   font-size: 3.7rem;
   line-height: 2rem;
-  color: #323232;
   margin: 2rem 0 3rem 0;
   font-weight: 600;
 }
@@ -473,7 +473,6 @@ body {
   font-size: 2rem;
   line-height: 2.5rem;
   letter-spacing: 0.035rem;
-  color: #323232;
   margin-top: 0;
 }
 @media screen and (min-width: 768px) {
@@ -494,7 +493,6 @@ body {
   margin-bottom: 1.8rem;
   font-weight: 600;
   letter-spacing: 0.05rem;
-  color: #000000;
 }
 @media screen and (min-width: 768px) {
   .about__paragraph-title {
@@ -872,27 +870,6 @@ body {
 @media screen and (min-width: 1280px) {
   .comment__separator {
     margin-bottom: 1.5rem;
-  }
-}
-.comment__div {
-  position: absolute;
-  background-color: #E1E1E1;
-  height: 2px;
-  width: 92vw;
-  bottom: 0;
-  left: -8rem;
-}
-@media screen and (min-width: 768px) {
-  .comment__div {
-    width: 75vw;
-    bottom: 0;
-    left: -6rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .comment__div {
-    left: -5.4rem;
-    width: 39vw;
   }
 }
 
